@@ -16,12 +16,17 @@
 금지 표현/대체 표현 가이드는 `docs/copy-guide.md` 참고.
 
 ## 산출물 (Word 문서)
+- `docs/겟머슬_최종카피_확정본.docx` — **디자인 전달용 최종 카피 확정본** (선택지 없이 잠근 문구만, 디자이너가 그대로 사용)
 - `docs/겟머슬_상세페이지_기획안.docx` — 15장 구매전환 상세페이지 최종 기획안 (비교표·루틴표·강조 박스 포함)
 - `docs/겟머슬_인플루언서_협업_브리프.docx` — 운동 인플루언서 협업 브리프
+- `docs/제품-주요특징.txt` — 상품 등록용 제품 주요 특징 (4000자 이하)
+
+> 확정본 기준: 기술명 "RPM 다이내믹 LED 시스템" 통일 / 썸네일 1안 단독 / 가격은 미확정 placeholder.
 
 생성 스크립트(원본은 `docs/`의 텍스트 기획안):
 ```bash
 pip install python-docx
-python3 scripts/build_plan_docx.py   # 상세페이지 기획안 .docx
-python3 scripts/build_docx.py        # 인플루언서 브리프 .docx
+python3 scripts/build_final_copy_docx.py   # 디자인 전달용 최종 카피 확정본 .docx
+python3 scripts/build_plan_docx.py         # 상세페이지 기획안 .docx
+python3 scripts/build_docx.py              # 인플루언서 브리프 .docx
 ```
