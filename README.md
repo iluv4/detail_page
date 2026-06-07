@@ -14,3 +14,14 @@
 3. 정확한 780×2000 규격으로 후처리
 
 금지 표현/대체 표현 가이드는 `docs/copy-guide.md` 참고.
+
+## 산출물 (Word 문서)
+- `docs/겟머슬_상세페이지_기획안.docx` — 15장 구매전환 상세페이지 최종 기획안 (비교표·루틴표·강조 박스 포함)
+- `docs/겟머슬_인플루언서_협업_브리프.docx` — 운동 인플루언서 협업 브리프
+
+생성 스크립트(원본은 `docs/`의 텍스트 기획안):
+```bash
+pip install python-docx
+python3 scripts/build_plan_docx.py   # 상세페이지 기획안 .docx
+python3 scripts/build_docx.py        # 인플루언서 브리프 .docx
+```
